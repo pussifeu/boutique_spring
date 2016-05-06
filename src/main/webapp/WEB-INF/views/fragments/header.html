@@ -1,0 +1,22 @@
+<div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".nav-collapse">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">My project</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li th:classappend="${page == 'home' ? 'active' : ''}"><a
+					href="#" th:href="@{/}">Home</a></li>
+				<li th:classappend="${page == 'messages' ? 'active' : ''}"><a
+					href="#" th:href="@{/}">Messages</a></li>
+				<li th:classappend="${page == 'tasks' ? 'active' : ''}"><a
+					href="#" th:href="@{/}">Tasks</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
