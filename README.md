@@ -13,4 +13,7 @@ https://spring.io/tools/sts/all
 
 4 : Update project with maven
 
-5 : Run
+5 : Project config: Database Mysql
+	a)Create database : sid_eboutique
+	
+6: Run 
